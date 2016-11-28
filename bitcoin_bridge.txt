@@ -1,0 +1,875 @@
+\documentclass{article}[10 pt]
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+
+\setlength{\oddsidemargin}{0in} \setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6in}
+\setlength{\unitlength}{1in}
+
+\linespread{1.5}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\al}{\aleph_0}
+\newcommand{\vs}{\vspace{0.1in}}
+
+\title{The Bitcoin Bridge}
+
+\date{March 15, 2016}
+
+\author{Mitch Lowry}
+
+\begin{document}
+
+\maketitle
+
+\textbf{1 Introduction}
+
+\vs
+
+
+\vs
+
+Since the introduction of the Bitcoin by Satoshi Nakamoto on January $3$,
+$2009$, an unforeseen number of cryptocurrencies have been created, many of
+which are based heavily on Bitcoin. This strange math based phenomenon of
+the cryptocurrency piques much debate and interest among economists. Not
+surprisingly, most economic research on cryptocurrencies is devoted to the
+most highly publicized and valued of cryptocurrencies, bitcoin; however,
+there is a relatively new currency that could significantly impact the
+cryptocurrency market and international business. This currency is Ripple’s
+XRP. The XRP’s most important role is to act as a bridge currency within
+Ripple’s free, open source payment protocol. This payment protocol allows
+parties from any part of the globe to perform transactions between any fiat
+currencies, commodities, cryptocurrencies, or other stores of value in as
+little as five seconds with little to no transaction fees.
+
+\vs
+
+There are many large questions to be tackled about the impact of Ripple on
+the global economy; however, the objective of this study is to tackle a
+somewhat modest one. I would like to determine whether or not usage of
+Ripple has affected the price of the bitcoin. The rational of this
+possibility stems from my belief that the Ripple payment protocol could have
+a positive influence on the demand of bitcoins by making transactions with
+bitcoins safer. Specific details about this will be covered in the
+conceptual framework section. The main task of the paper will be creating an
+appropriate vector autoregressive model (VAR) model for the price of
+bitcoin.
+
+\vs
+
+\textbf{2 Literature Review}
+
+\vs
+
+\textbf{2.1 Bitcoin Pricing}
+
+\vs
+
+Upon reviewing the literature, I came across a literature review published
+in May of $2014$ by Ciaian et al. ($2014$) upon which I will be piggybacking
+my literature review but adding a little more detail. In the previous
+literature there are quite a few factors that have been identified as
+important for determining the price of BitCoin: ($i$) interacting between
+BitCoin demand and supply (Buchholz et al. $2012$; Ciaian et al $2014$);
+($ii$) global financial indicators (van Wijk $2013$); and ($iii$)
+attractiveness for investors (Kristoufek $2013$; MacDonell $2014$; Ciaian et
+al $2014$).
+
+\vs
+
+Buchholz et al. ($2012$) use VAR modeling to determine the price of
+bitcoins. The study concludes that the interaction between bitcoin supply
+and demand is a major determinant of bitcoin prices. These results are
+consistent with the results of Ciaian et al. ($2014$) who find that the one
+day lag of bitcoin prices is US dollars, the four day lag of total bitcoins
+that have been mined, and the one and two day lags of bitcoin days
+destroyed. Kristoufek ($2013$), however, explains that the price formation
+of bitcoin cannot be explained by standard economic theories because
+supply-demand fundamentals are absent from bitcoin markets. He says this for
+the following reasons: ($i$), bitcoin exists independently of any financial
+regulatory systems, so the supply of bitcoin is detached from what is going
+on in the economy, and ($ii$) there are no interest rates for
+cryptocurrencies, so profits can only be made on price changes.
+
+\vs
+
+Van Wijk ($2013$) stresses that since bitcoin is a fiat currency, the only
+reason bitcoin has value is because investors and other buying agents
+believe that bitcoins will retain their value. He claims that general
+economic indicators are good indicators of whether or not bitcoin will
+retain its value, so he performs Ordinary Least Squares (OLS) on with such
+indicators and then applies an error correction model to get long term
+relationships because performing OLS on differenced variables results in
+loss of long run effects in the outcome of the analysis. Van Wijk found that
+in the short run the only variable that had a significant influence on the
+value of bitcoin was the closing value of the Dow Jones index (positive
+influence) but that there were insignificant variables, namely the closing
+value of the Nikkei $225$ (negative influence), the euro-dollar exchange
+rate (positive influence) and the yen-dollar exchange rate (positive
+influence), with large coefficients that may explain some of the variation
+in bitcoin. Whether this is a legitimate claim or he is just trying to make
+himself look better is up for debate. In the long run he found that the
+following variables were important for determining the price of bitcoin:
+($i$) Dow Jones index (positive influence), ($ii$) the euro-dollar exchange
+rate (negative influence), and ($iii$) the euro-dollar exchange rate
+(negative influence). Dimitrova ($2005$) claims that there could be a
+negative relationship between bitcoin prices and financial indicators.
+Dimitrova ($2005$) says that if stock prices fall, then foreign investors
+may decrease their stock with BitCoin; however, what Dimitrova does not
+account for here is that a decline in the price of some stock may also be a
+signal to purchase that stock if one does not currently hold any of it (or
+even if they do). Ciaian et al. ($2014$) and MacDonell ($2014$) find no such
+relationships between bitcoin prices and macroeconomic indicators.
+
+\vs
+
+MacDonell ($2014$) used log-periodic power law modeling in an attempt to
+make a model that can predict crashes in bitcoin prices. The motivation from
+this clearly stems from the major bitcoin bubble of $2013$. Of the variables
+MacDonell tested, only the CBOE Volatility Index was found to be
+significant, which implies that only investor behavior matters for
+determining the prices of bitcoins. This is likely due to the fact that
+MacDonell used news mentions as a proxy for consumer participation. This
+does not seem like a good enough proxy, and so the regression would not
+really parallel consumer participation. Both Kristoufek ($2013$) and Ciaian
+($2014$) found that indicators of the bitcoin supply and demand were
+significant in determining the price of bitcoin in the short run and in the
+long run. They used a somewhat more reasonable proxy for attractiveness for
+investors, the volume of daily BitCoin views on Wikipedia. According to
+Kristoufek ($2013$) this proxy is a good indicator of how interested
+investors are in bitcoin. 
+
+\vs
+
+\textbf{2.2 Bitcoin Attractiveness to Investors}
+
+\vs
+
+The attractiveness of bitcoin to investors and to vendors depends on both
+the risk and return of buying and performing transactions with bitcoins.
+Vendors accepting bitcoin may also be worried about the costs of converting
+bitcoins into other currencies because the economies that they function in
+do not operate with bitcoins. One important risk to consider is the security
+of Bitcoin exchanges. Since bitcoin is a digital currency there is a very
+real threat of cyber-attacks. In fact, Moore and Christin ($2013$) found
+that of the $40$ Bitcoin exchanges that they examined $18$ closed down
+because of cyber-attacks in which users information and or bitcoins were
+stolen. Another thing to consider for investors is the cost of finding out
+what is worth investing in. Many studies (Gervais, Kaniel, and Mingelgrin
+$2001$; Grullon, Kanatas, and Weston $2004$; and Barber and Odean $2008$)
+have found that the decisions of new investors may be distorted by the
+effect of media attention. This is the rational for the use of news mentions
+by MacDonell ($2014$).
+
+\vs
+
+\textbf{3 Theory}
+
+\vs
+
+As previously discussed, studies have found the following things to be
+important for determining the price of BitCoin: ($i$) interaction between
+BitCoin demand and supply; ($ii$) global financial indicators; and ($iii$)
+attractiveness for investors.
+
+\vs
+
+\textbf{3.1 Supply-demand Theory}
+
+\vs
+
+Since BitCoin has no intrinsic value and is a fiat currency, demand for
+BitCoins is primarily determined by its expected value in the future, i.e.
+people do not want to accept or exchange for BitCoins if they believe the
+price of BitCoin is going to be lower when they plan on using said BitCoins.
+The supply of BitCoins is determined by the total number of BitCoins in
+circulation. BitCoins are generated by BitCoin “miners” who, either
+individually or in groups, complete the computationally difficult problem of
+finding and adding blocks to the BitCoin block chain, BitCoin’s public
+ledger of past transactions. When miners find a block and update the public
+ledger, new BitCoins are generated and given to the miners as compensation.
+The difficulty of finding blocks is adjusted every 2016 blocks based on the
+total computational power going into mining. This adjustment results in a
+steady rate of mining; a new block is added to the ledger every ten minutes.
+The reward that miners receive from finding these blocks is halved every
+$210000$, which means over two year periods there is a relatively linear
+increase in the number of BitCoins. This decrease in the reward also means
+that there is a predefined number of BitCoins in the long-run. This will be
+$21$ million BitCoins in $2140$. The process of adding blocks to the ledger
+is a way to insure an accurate public ledger, and thus is related to the
+security of the bitcoin system (Nakamoto $2008$).
+
+\vs
+
+In the spirit of Ciaian et al. ($2014$) we will also use a modified version
+of Barro’s ($1979$) model to discuss the theory of the interaction between
+money supply and demand. Firstly, we note that in perfect markets there is
+equilibrium between money supply and money demand. The bitcoin model is
+certainly not a perfect market, but there may be a similar relationship here
+as with other fiat currencies. For Barro’s model we have the following
+equation for the supply of bitcoins:
+
+\vs
+
+($1$) \begin{center} $M^{S} = P^{B}B$. \end{center}
+
+\vs
+
+In the above equation $M^{S}$ denotes the supply of bitcoins, $P^{B}$
+denotes the price of bitcoins in US dollars, and $B$ denotes the total
+number of bitcoins. Based on the Fischer equation money demand $M^{D}$ is
+dependent on the general price level of goods, $P$, the size of the bitcoin
+economy, $Y$, and the velocity of bitcoins, $V$. The assumed equation is as
+follows:
+
+\vs
+
+($2$) \begin{center} $M^{D} = \dfrac{PY}{V}$. \end{center}
+
+\vs
+
+Using the equations one can derive the following price relationship:
+
+($3$) \begin{center} $P^{B} = \dfrac{PY}{VB}$. \end{center}
+
+\vs
+
+This equation implies the following things about the price of bitcoin: ($i$)
+bitcoin prices decrease as the velocity and total stock of bitcoins
+increases, and ($ii$) bitcoin prices increase as the general price level and
+the size of the bitcoin economy increases. Thus, we can construct some model
+of bitcoin prices by the following:
+
+\vs
+
+($4$) \begin{center} $p_{t}^{B} = \beta_{0} + \beta{1}p_t + \beta_{2}y_t +
+    \beta_{3}v_t + \beta_{4}b_t + \epsilon_t$ \end{center}
+
+where each lower case variable is a some measure its corresponding uppercase
+variable and $\epsilon_t$ is the error term at time $t$.
+
+\vs
+
+\textbf{3.2 Attractiveness to Investors and Vendors and Macroeconomic
+Indicators}
+
+\vs
+
+Those things that should increase the security of using bitcoin and reduce
+transaction costs or potential transaction costs should increase
+attractiveness of bitcoins to both investors and vendors. Theoretically,
+this should increase the demand of bitcoins, thereby, increasing the price
+of bitcoins by a loose interpretation of equation ($3$); however, the
+previous literature review demonstrates that this is not necessarily true.
+Besides what we have already discussed, one of the largest risks of
+investing in and accepting bitcoins as compensation is the high price
+volatility that bitcoin is plagued with. This volatility may actually
+simulate investment, especially when the volatility of the stock market is
+especially low due to the allure of the possibility of large returns;
+however, there is obviously good reason to shy from investing in things with
+such volatility. This high volatility also imposes additional risk on
+vendors because vendors who do accept bitcoins may receive less money than
+they received due to prices changing they are able to convert their bitcoins
+into whatever currency they would like.
+
+\vs
+
+As previously discussed, a new block is added to the Bitcoin chain block
+every ten minutes. This means that the average time that one has to wait in
+order to convert their bitcoins into another currency is five minutes. Due
+to the high price volatility of bitcoin the vendor may receive less money
+than they had hoped, will incur transaction fees, and perhaps a little
+stress or actual costs from training employees and dealing in bitcoins. In
+enters Ripple. Ripple is a cryptographically secure internet protocol that
+is a peer-to-peer payment system. When using Ripple, XRP acts as a bridge
+currency so that one Ripple user can pay in the currency of their choice and
+the other Ripple user can receive said payment in the currency of their
+choice. This is done with phenomenally low transaction fees. The fees are
+set to be essentially zero, but not zero so as to protect from adversaries
+of Ripple who may try to overload the Ripple ledger by spamming transactions
+(Schwartz et al. $2014$). 
+
+\vs
+
+This payment system decreases many of the negative aspects of dealing in
+bitcoins and investing in bitcoins. For one thing, volatility is much less
+of an issue for both investors and vendors. This is because one is able to
+use the Bitcoin Bridge (the integration of the Bitcoin network and Ripple)
+to more quickly convert bitcoins into a currency of their preference or to
+more quickly liquidate bitcoin holdings. Ten minutes may be a long time
+given the price volatility of bitcoin, but a matter of seconds is almost a
+laughable amount of risk. The Bitcoin Bridge also helps to reduce the risk
+associated with using Bitcoin exchanges. People with Ripple wallets need not
+ever directly work inside of payment systems specific to Bitcoin, and their
+personal information is safer and transactions, more secure. 
+
+\vs
+
+By our previous discussions we expect those macroeconomic indicators that
+are positively related to the general price level of good to be positively
+related to the price of bitcoins and those that are negatively related to be
+negatively related to the price of bitcoins.
+
+\vs
+
+Thus, we adjust equation ($4$) as follows to account for the attractiveness
+to investors and macroeconomic indicators:
+
+\vs
+
+($5$) \begin{center} $p_{t}^{B} = \beta_{0} + \beta_{1}p_t + \beta_{2}y_t +
+    \beta_{3}v_t + \beta_{4}b_t + \Sigma \gamma_{i}a_{i_t} + \Sigma
+    \alpha_{i}m_{i_t}  + \epsilon_t$ \end{center}
+
+\vs
+
+where each $a_{i_t}$ is an indicator of bitcoin's attractiveness to
+investors and each $m_{i_t}$ is a macroeconomic indicator.
+
+\vs 
+
+\textbf{4 Data}
+
+\vs
+
+All data was acquired from \textit{quandl.com}. All data is daily data
+ranging from August $5$, $2010$ until December $7$, $2014$. There are
+different days missing for each of the variables, so the total number of
+observations will depend on the regression. The dependent variable is the
+BTC-USD exchange rate, $price\_ave$ in US dollars averaged over all $24$
+hours over all Bitcoin markets. Data on the daily bitcoin days destroyed,
+$bcdde$ is used as a proxy for the velocity of bitcoins. This is a pretty
+good indicator of bitcoin hoarding. This measure is added to after each
+transaction during the day. The amount added to the measure for each
+transaction on a given day is equal to the sum of the days since each
+bitcoin was spent for each bitcoin used in the transaction. Also, as
+determinants of the bitcoin economy, the number of bitcoins in circulation,
+$totcoins$ is used for the supply of bitcoins and the number of unique
+Bitcoin transactions, $trans\_day$, and the number unique Bitcoin accounts,
+$accounts\_day$, used in transactions are used as proxies for bitcoin
+demand. 
+
+\vs
+
+Additionally, oil prices are a good macroeconomic indicator of the future
+price of goods, so the prices of Brent Oil, an international oil company are
+used ($brent\_day$). Also, the value of the DOW Jones is used as a price
+indicator and an indicator of attractiveness to investors. For the same
+reasons, the Euro-USD exchange rate, $usd\_eur$, and the USD-JPY exchange
+rate, $usd\_jpy$ are considered for the model.
+
+\vs
+
+Sadly, I could not figure out how to collect data from the Ripple charts API
+to find the total number of Ripple accounts over time. This would have
+served as a measure for how much Ripple is used. My original hypothesis is
+that the actual use of Ripple account, independent of the transactions
+performed on said accounts, would influence the price of bitcoin by
+affecting the attractiveness of bitcoin to investors and vendors. Another
+important variable that would have been good for determining the
+attractiveness of bitcoins to investors and vendors would have been data on
+the daily Wikipedia hits of Bitcoin, as noted in the literature review.
+
+\vs
+
+\textbf{5 Expectations}
+
+\vs
+
+The expectations of this model specification are hard to determine based on
+the lack of data. I estimate, based on the literature, that because of the
+inclusion of measures of the supply and demand of bitcoin, macroeconomic
+indicators will mostly not be important in determining the price of bitcoin.
+I believe that the measures of bitcoin supply and demand play out as
+explained in the literature review and conceptual framework. Also, exchange
+rates may or may not be significant.
+
+\vs
+
+\textbf{6 Preliminary Analysis}
+
+\vs
+
+Firstly, summary statistics were calculated for all of the initial
+variables, and line graphs for all of the data (Appendix A). The descriptive
+statistics do not necessarily tell us much; however, the line graphs are
+quite useful. Firstly, not that the graphs suggest that we may need to do
+a log transformation of the prices for bitcoin. The graphs also give us some
+intuition about the stationarity of the time series, as discussed below.
+
+\textbf{6.1 Handling Stationarity}
+
+\vs
+
+In order to specify a VAR model that is not spurious, we must ensure that
+the variables of the model are cointegrated; however, performing tests of
+stationarity cannot be performed when there are gaps in the data unless
+specialized fixes are performed. Gaps in the data are necessary
+consequences of how macroeconomic indicators are recorded. Of the variables
+with no gaps, $price\_ave$, $totcoins$, $usd\_jpy$, and $usd\_eur$, all are
+non-stationary. The augmented Dickey-Fuller tests were applied to the time
+series for the tests (Appendix B). Since it is outside of the scope of this
+project to attempt to perform specialized tests for non-stationarity, I
+will have to use all of the information that I have. First, we checked to
+see if each of $price\_ave$, $totcoins$, $usd\_jpy$, and $usd\_eur$ are
+$I$($1$) by performing another Augmented Dickey-Fuller test on the
+differenced variables (Appendix B). Indeed, there is evidence that every
+variable is stationary. In fact, even at $\alpha = .01$ all models are
+stationary all the way up to lag $23$ except for $dif\_totcoins$, which is
+stationary up to $17$ lags but still stationary up to $23$ lags at
+$\alpha=.05$.
+
+\vs
+
+The Bitcoin algorithm for adjusting the computational difficulty of
+algorithms results in a constant increase of Bitcoins, as can been seen by
+the line graph of $totcoins$ (Appendix A). Because of this, the variance
+may be fairly constant, but the average is not. Thus, we find it likely
+that $totcoins$ is of order of integration one, but we may specify some
+models in which this is not an assumption. Looking at the line graph for
+daily bitcoin days destroyed during the period in which we are using the
+data, the variance appears to be relatively constant, especially when
+excluding massive drops in bitcoin prices and seasonal events like
+Christmas, Cyber-Monday, and Black Friday. Due to the relatively large
+number of data points, I believe even without adjustment this will result
+in the data being stationary. This is consistent with findings of the
+velocity of money that suggest a borderline relationship in some tests and
+stationarity indeed in others (Aslan and Korap $2007$; and Brand et al.
+$2002$). Thus, I believe it to be probable that $bcdde$ is stationary.
+Based on the line graphs, $address\_day$ and $trans\_day$ seem to be of
+order integration of $I$($1$), especially as of late. This is consistent
+with the literature review.
+
+\vs
+
+A recent study by Bacon and Kojima ($2008$) suggests that both oil prices
+and the log transformation of oil prices are non-stationary with order
+$I$($1$). This suggests that both $brent\_day$ and $ln\_brent\_day$ will be
+non-stationary with $I$($1$). Mr. David Alan Dickey himself points out how
+obvious it is that the log transformation of the Dow Jones Index is
+non-stationary of order one (Dickey, David $2005$) and tests these
+hypothesizes. I am unsure about what the literature has to say about the
+stationarity of the Dow Jones Index itself. The Dow Jones looks very
+clearly like a non-stationary variable with $I$($1$) based on the line
+graph, i.e. if one draws a fairly straight, positively sloped line through
+the data in the right location, then you can see that the variance of
+differences seems to be fairly constant and that the differences are
+centered about some mean. Thus, we also assume that $ln_dj_day$ and
+$dj_day$ are of order $I$($1$). 
+
+\vs
+
+The stationarity of those log transformed variables for which it was is
+possible to perform an Augmented Dickey-Fuller test without transformations
+was tested (Appendix B). Indeed, each of the log transformations of
+$totcoins$, $usd\_eur$, $usd\_jpy$, and $price\_ave$ are $I$($1$). I am
+done with the analysis of stationarity. I will base base modeling off of
+the available information, which includes information from the
+Dickey-Fuller and the literature about what lags may be important.
+
+\vs
+
+\textbf{6.2 Preliminary Regressions}
+
+\vs
+
+The first two regressions run for price estimation are in Appendix C.
+Initially, I attempted to keep in all cointegrated variables and then add
+in lags that I thought were important. My initial model failed in every
+respect: there was multicolinearity, autocorrelation, heteroskedasticity,
+and most importantly, misspecification. The mulicolinarity was clear,
+although not tested for; autocorrelation was indicated by failing the
+Augmented Durbin Watson test, which is valid for models that have lags of
+the dependent variable as independent variables; heteroskedasticity is
+indicated by rejecting the null in the Breusch-Pagen test; and both the
+failed Durbin Watson test and the failed Ramsey RESET test indicate
+misspecifcation of the model. The price of bitcoin is clearly not linear,
+as previously discussed. The autocorrelation and homoskedasticity are also
+clear in Figures $30$ and $31$. The model does past the F test, but of all
+the variables only the first and second day lags of bitcion price and the
+$address_day$ were found to be signficant. 
+
+\vs
+
+In a vain attempt to make the model better, I decided to take out variables
+that were causing multicolinearity and that were not that predictive
+(Appendix C). The lag of exchange rates make much more sense, and the
+number of unique bitcoin addresses from which purchases were made on any
+given day has, without a doubt, a very high correlation to the number of
+unique bitcoin transactions performed on a day. Thus, I decided to keep the
+better proxy, the number of unique bitcoin transactions on a given day. I
+believe the number of transactions would be a better proxy unless there
+were people spamming the network with very low payments, which would be
+financially costly in the Ripple system but especially so in mainstream
+Bitcoin exchanges. One can see from Figure $31$ that the model is in no
+better shape than its predecessor. The very low p-values for the Durbin
+Watson tests suggest the regression is spurious.
+
+\vs
+
+I followed up these regressions by modeling the logarithmic price of
+ bitcoin (Appendix D). 
+
+\vs
+
+\textbf{7 Results of “Best” Models}
+
+\vs
+
+The model found in figure $24$ seems to have been the best model I could
+come up with. The model passes specification testing via the Ramsey RESET
+test, just barely checks in as having homoskedasticity by the Breusch-Pagen
+test, and has such a high probability for the Durbin Watson that it does
+not appear to be spurious or have autocorrelation. This should be weighed
+carefully because the Breusch-Pagen test only tests for linear
+heteroskedasticity. Interestingly, lagged exchange rates are now
+considereed important for determining bitcoin prices. The meaning of the
+signs on these coeifficents is up for debate though. 
+
+\vs
+
+If one removes the log of total bitcoins from the regression because of its
+insignifance in determining prices, they will find that the probability of
+there being heteroskedasticity increases to the ponit of being signficant at
+$\alpha=.05$ (Figure $38$). Also, one should note the extremely high
+correlation between the one day lag and the two day lag in bitcoin prices.
+Removing one of these lags results in failing of the Durbin Watson test.   
+
+\vs
+
+\textbf{8 Summary and Implications}
+
+\vs
+
+An interesting result here is that the model goes from being a seeming
+pretty good model in terms of explaining having autocorrelation when the
+second llag of bitocoin prices is removed. I think this is because it takes
+away this sort of idea that bitcoin investors and potential bitcoin
+investors are not only thinking about what happened when it comes to the
+immediate but also to slightly before that when trying to determine what
+will happen to the price of bitcoin. This is because the price volatility
+of bitcoin is phenomenal. Furthermore, these regressions have very large
+$R^2$ values, and it should be determined whether or not their residuals
+are stationary so as to reduce the possibility that these regressions are
+spurious. Similiar to the literature, we found that the demand for bitcoins
+was more important for determining bitcion prices. Indeed, we found that
+the supply of bitcoins was not an important determinant. All results should
+be taken lightly because of the possibility of many omitted variables that
+could have biased the results.
+
+\vs
+
+\textbf{9 Future Work}
+
+\vs
+
+Future work on this project will involve a more indepth study of solving
+endogeniety problems. I could try performing more complex error correction
+models within the VAR framework, or more interestingly, work with
+simultaneous equations. Either way, I would still like to take another look
+at this problem when I have collected data from Ripple and gotten data on
+the price volitility of bitcoin. I would also like to learn how to test for
+stationarity when there is gaps in the data. In addition to this, one thing
+I am particularly interested in is using machine learning for prediction. 
+
+\newpage
+
+\begin{center}
+
+\textbf{References}
+
+\end{center}
+
+\vspace{5mm}
+
+Aslan, O. and Korap, L. ($2007$). Testing Theory of Money for the Turkish
+Economy. \textit{BDDK}
+$https://www.bddk.org.tr/WebSitesi/turkce/Raporlar/BDDK_Dergi/4212Makale-5.pdf$
+
+\vs
+
+Bacon, R. and Kojima, M. ($2008$). “Coping with Oil Price Volatility”.
+\textit{ESMAP} $05$/$008$
+$http://www.esmap.org/sites/esmap.org/files/8142008101202_coping_oil_price.pdf$ 
+
+\vs
+
+Barber, B.M. and T. Odean ($2008$). All That Glitters: The Effect of
+Attention and News on the Buying Behavior of Individual and Institutional
+Investors.
+\textit{Review of Financial Studies}
+
+$21$($2$): $785-818$. 
+
+\vs
+
+Brand, C., Gerdesmeier, and D., Roffia ($2002$). “Estimating the Trend of
+M3 Income Velocity Underlying the Reference Value for Monetary Growth.”
+\textit{European Central Bank} $3$ $1-61$
+https://www.ecb.europa.eu/pub/pdf/scpops/ecbocp3.pdf
+
+\vs
+
+Buchholz, M., Delaney, J., Warren, J. and Parker, J. ($2012$). “Bits and
+Bets, Information, Price Volatility, and Demand for Bitcoin.”
+\textit{Economics} $312$,
+$http://www.bitcointrading.com/pdf/bitsandbets.pdf$
+
+\vs
+
+David, D. ($2005$). “Stationary Issues in Time Series Modeling”.
+\textit{Sugi} $30$: $192-30$.
+$http://www2.sas.com/proceedings/sugi30/192-30.pdf$
+
+\vs
+
+Dimitrova, D. ($2005$). The Relationship between Exchange Rates and Stock
+Prices; Studied in a Multivariate Model.” \textit{Issues in Political
+Economy} $14$: $1-25$.
+
+\vs
+
+Gervais, Simon, Ron Kaniel, and Dan H. Mingelgrin. ($2001$). The
+high-volume return
+
+premium. \textit{Journal of Finance} $56$: $877–919$. 
+
+\vs
+
+
+Grullon, G., Kanatas, G. and Weston, J.P. ($2004$). Advertising, breadth of
+ownership, and liquidity.\textit{Review of Financial Studies} 17: 439–61.
+
+\vs
+
+Kristoufek, L. ($2013$). “BitCoin meets Google Trends and Wikipedia:
+Quantifying the relationship between phenomena of the Internet era.”
+\textit{Scientific Reports} $3$ ($3415$): $1-7$.
+
+\vs
+
+Nakamoto, S. ($2008$). Bitcoin: A Peer-to-Peer Electronic Cash System.
+\textit{The Cryptography Mailing List}, $1-9$.
+
+\vs
+
+MacDonell, Alec ($2014$). “Popping the Bitcoin Bubble: An application of
+log-periodic power law modeling to digital currency to digital currency.”
+\textit{University of Notre Dame}
+$http://economics.nd.edu/assets/134206/mac_donell_popping_the_biticoin_bubble_an_application_of_log_periodic_power_law_modeling_to_digital_currency.pdf$
+
+\vs
+
+Moore, T. and N. Christin ($2013$). “Beware the Middleman: Empirical
+Analysis of BitCoin-Exchange Risk.” \textit{Financial Cryptography and Data
+Security} $7859$: $25-33$.
+
+\vs
+
+Schwartz, D., Youngs, N., and Britto, A. ($2014$), The Ripple Protocol
+Concensus Algorithm. \textit{Ripple Labs Inc.}
+$https://ripple.com/files/ripple_consensus_whitepaper.pdf$
+
+\newpage
+
+\textbf{Appendix A: Preliminary Analysis}
+
+\vspace{5mm}
+
+\begin{center}
+
+\begin{figure}
+
+\end{figure}
+
+\end{center}\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{summary.png}
+
+\caption{Summary Statistics}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{ave_price.png}
+
+\caption{Bitcoin value in US Dollars}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{brent_oil.png}
+
+\caption{Brent Oil Prices in US Dollars}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{dj_days.png}
+
+\caption{DOW Jones Index US Dollars}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{trans_day.png}
+
+\caption{Number of Unique Bitcoin Transactions per Day}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{address_day.png}
+
+\caption{Number of Unique Bitcoin Addresses Involved In Transactions per Day}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{tot_btc.png}
+
+\caption{Total Bitcoins}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{USD_EUR.png}
+
+\caption{USD-EUR Exchange Rate in US Dollars}
+
+\label{overflow}
+
+\end{figure}
+
+\vs
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{USD_JPY.png}
+
+\caption{USD-JPY Exchange Rate in Japanese Yen}
+
+\label{overflow}
+
+\end{figure}
+
+\clearpage
+
+\textbf{Appendix B: Stationarity}
+
+\vspace{5mm}
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=150mm]{df_totcoins.pnon}
+
+\label{overflow}
+
+\end{figure}
+
+\vspace{3mm}
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=125mm]{reg4_vif.png}
+
+\caption{Decreased Multicolinarity}
+
+\label{overflow}
+
+\end{figure}
+
+\vspace{3mm}
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=125mm]{reg5.png}
+
+\caption{Last Good Model}
+
+\label{overflow}
+
+\end{figure}
+
+\clearpage
+
+\newpage
+
+\begin{figure}[ht!]
+
+\centering
+
+\includegraphics[width=110mm]{reg5_vif.png}
+
+\caption{Multicolinearity of Model}
+
+\label{overflow}
+
+\end{figure}
+
+\end{document}

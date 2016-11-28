@@ -1,0 +1,614 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.26)  4 NOV 2016 15:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bitcoin_bridge.tex
+(./bitcoin_bridge.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks15
+\thm@bodyfont=\toks16
+\thm@headfont=\toks17
+\thm@notefont=\toks18
+\thm@headpunct=\toks19
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks22
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks23
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks24
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count99
+\mult@box=\box28
+\multicol@leftmargin=\dimen112
+\c@unbalance=\count100
+\c@collectmore=\count101
+\doublecol@number=\count102
+\multicoltolerance=\count103
+\multicolpretolerance=\count104
+\full@width=\dimen113
+\page@free=\dimen114
+\premulticols=\dimen115
+\postmulticols=\dimen116
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box29
+\last@line=\box30
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count105
+\c@finalcolumnbadness=\count106
+\last@try=\dimen117
+\multicolovershoot=\dimen118
+\multicolundershoot=\dimen119
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\multicol@sort@counter=\count107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(./bitcoin_bridge.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
+\openout1 = `bitcoin_bridge.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen122
+\scratchbox=\box54
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen123
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 292.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 292.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.303         '#
+                BTC', 'bitcoin', or '#bitcoin'.
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.303         '#BTC', 'bitcoin', or '#
+                                      bitcoin'.
+? 
+[6] [7]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [8]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [9] [10] [11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.601 circulation, $BTC$_
+                         t is used for the supply of Bitcoins at time $t$,
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.602 ...umber of unique Bitcoin transactions, $T^
+                                                  d_t$, and the number
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.603 unique Bitcoin accounts, $Num_User$_
+                                          {day}, used in transactions are us...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.605 
+      
+? 
+
+Overfull \hbox (352.59538pt too wide) in paragraph at lines 600--605
+[]\OT1/cmr/m/n/10 Also, as de-ter-mi-nants of the Bit-coin econ-omy, the num-be
+r of Bit-coins in cir-cu-la-tion, $\OML/cmm/m/it/10 BTC$$[]isusedforthesupplyof
+Bitcoinsattime$\OT1/cmr/m/n/10 t$\OML/cmm/m/it/10 ; andthenumberofuniqueBitcoin
+transactions;$\OT1/cmr/m/n/10 T$[]$,
+ []
+
+
+Overfull \hbox (57.99983pt too wide) in paragraph at lines 600--605
+\OT1/cmr/m/n/10 and the num-ber unique Bit-coin ac-counts, $\OML/cmm/m/it/10 Nu
+m[]ser$$[]; usedintransactionsareusedasproxiesforBitcoindemand:$ 
+ []
+
+[12]
+Overfull \hbox (9.03831pt too wide) in paragraph at lines 692--694
+[]\OT1/cmr/m/n/10 Talk about mod-el-ing mis-spec-i-fi-ca-tion. Talk about spu-r
+i-ous re-la-tion-ships caused by non-stationarity. 
+ []
+
+[13] [14] [15]
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ú in font cmbx10!
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ù in font cmbx10!
+ [16] [17]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (30.05766pt too wide) in paragraph at lines 948--952
+\OT1/cmr/m/n/10 Volatil-ity, and De-mand for Bit-coin. \OT1/cmr/m/it/10 Eco-nom
+ics $\OT1/cmr/m/n/10 312$, $\OML/cmm/m/it/10 http \OT1/cmr/m/n/10 : \OML/cmm/m/
+it/10 ==www:Bitcointrading:com=pdf=bitsandbets:pdf$ 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (516.70728pt too wide) in paragraph at lines 991--995
+\OT1/cmr/m/n/10 mod-el-ing to dig-i-tal cur-rency to dig-i-tal cur-rency. \OT1/
+cmr/m/it/10 Uni-ver-sity of Notre Dame $\OML/cmm/m/it/10 http \OT1/cmr/m/n/10 :
+ \OML/cmm/m/it/10 ==economics:nd:edu=assets=\OT1/cmr/m/n/10 134206\OML/cmm/m/it
+/10 =mac[]onell[]opping[]he[]iticoin[]ubble[]n[]pplication[]f[]og[]eriodic[]owe
+r[]aw[]odeling[]o[]igital[]urrency:pdf$ 
+ []
+
+[18]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [19] <summary.png, id=74, 482.55281pt x 178.41656pt>
+File: summary.png Graphic file (type png)
+ <use summary.png>
+Package pdftex.def Info: summary.png used on input line 1024.
+(pdftex.def)             Requested size: 426.79134pt x 157.8047pt.
+
+<ave_price.png, id=76, 1040.88875pt x 308.15125pt>
+File: ave_price.png Graphic file (type png)
+ <use ave_price.png>
+Package pdftex.def Info: ave_price.png used on input line 1038.
+(pdftex.def)             Requested size: 426.79134pt x 126.34752pt.
+
+<brent_oil.png, id=77, 1040.88875pt x 381.425pt>
+File: brent_oil.png Graphic file (type png)
+ <use brent_oil.png>
+Package pdftex.def Info: brent_oil.png used on input line 1052.
+(pdftex.def)             Requested size: 426.79134pt x 156.39107pt.
+
+<dj_days.png, id=78, 1037.8775pt x 308.15125pt>
+File: dj_days.png Graphic file (type png)
+ <use dj_days.png>
+Package pdftex.def Info: dj_days.png used on input line 1066.
+(pdftex.def)             Requested size: 426.79134pt x 126.71898pt.
+
+<trans_day.png, id=79, 1038.88126pt x 309.155pt>
+File: trans_day.png Graphic file (type png)
+ <use trans_day.png>
+Package pdftex.def Info: trans_day.png used on input line 1080.
+(pdftex.def)             Requested size: 426.79134pt x 127.00438pt.
+
+<address_day.png, id=80, 1038.88126pt x 307.1475pt>
+File: address_day.png Graphic file (type png)
+ <use address_day.png>
+Package pdftex.def Info: address_day.png used on input line 1094.
+(pdftex.def)             Requested size: 426.79134pt x 126.17967pt.
+
+<tot_btc.png, id=81, 1037.8775pt x 379.4175pt>
+File: tot_btc.png Graphic file (type png)
+ <use tot_btc.png>
+Package pdftex.def Info: tot_btc.png used on input line 1108.
+(pdftex.def)             Requested size: 426.79134pt x 156.02533pt.
+
+<USD_EUR.png, id=82, 1037.8775pt x 377.41pt>
+File: USD_EUR.png Graphic file (type png)
+ <use USD_EUR.png>
+Package pdftex.def Info: USD_EUR.png used on input line 1122.
+(pdftex.def)             Requested size: 426.79134pt x 155.1998pt.
+
+<USD_JPY.png, id=83, 1034.86626pt x 312.16624pt>
+File: USD_JPY.png Graphic file (type png)
+ <use USD_JPY.png>
+Package pdftex.def Info: USD_JPY.png used on input line 1136.
+(pdftex.def)             Requested size: 426.79134pt x 128.74158pt.
+ [20 <./summary.png> <./ave_price.png>]
+
+LaTeX Warning: Text page 21 contains only floats.
+
+[21 <./brent_oil.png> <./dj_days.png> <./trans_day.png>] [22 <./address_day.png
+> <./tot_btc.png> <./USD_EUR.png>] [23 <./USD_JPY.png>]
+
+LaTeX Warning: File `df_totcoins.pnon' not found on input line 1154.
+
+
+! LaTeX Error: Unknown graphics extension: .pnon.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1154 ...egraphics[width=150mm]{df_totcoins.pnon}
+                                                  
+? 
+<reg4_vif.png, id=105, 482.55281pt x 151.3153pt>
+File: reg4_vif.png Graphic file (type png)
+ <use reg4_vif.png>
+Package pdftex.def Info: reg4_vif.png used on input line 1166.
+(pdftex.def)             Requested size: 355.65944pt x 111.52826pt.
+
+<reg5.png, id=106, 488.57532pt x 971.12813pt>
+File: reg5.png Graphic file (type png)
+ <use reg5.png>
+Package pdftex.def Info: reg5.png used on input line 1180.
+(pdftex.def)             Requested size: 355.65944pt x 706.94682pt.
+
+
+LaTeX Warning: Float too large for page by 186.89127pt on input line 1186.
+
+[24
+
+ <./reg4_vif.png>] [25 <./reg5.png>]
+<reg5_vif.png, id=116, 482.55281pt x 178.41656pt>
+File: reg5_vif.png Graphic file (type png)
+ <use reg5_vif.png>
+Package pdftex.def Info: reg5_vif.png used on input line 1196.
+(pdftex.def)             Requested size: 312.9803pt x 115.72435pt.
+ [26
+
+ <./reg5_vif.png>] (./bitcoin_bridge.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2649 strings out of 495028
+ 35223 string characters out of 6181497
+ 94114 words of memory out of 5000000
+ 5797 multiletter control sequences out of 15000+600000
+ 11926 words of font info for 49 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,6n,26p,240b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb>
+Output written on bitcoin_bridge.pdf (26 pages, 511938 bytes).
+PDF statistics:
+ 157 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
