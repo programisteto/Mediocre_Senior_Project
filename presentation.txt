@@ -1,0 +1,264 @@
+What is Bitcoin.
+
+\vs
+
+Example of transaction
+
+\vs
+
+OLS is
+solving the optimization problem blah blah blah. Write what I have on those
+papers.
+
+\vs
+
+Suppose we have matrix notation 
+
+\vs
+
+$y = X\beta + \epsilon$, ($y$, $\epsilon \in
+\mathbb{R}^n$, $\beta \in \mathbb{R}^k$ and $X \in \mathbb{R}^{n x K}, which
+can be expressed by
+
+\vs
+
+$$y_i = \sum_{j = i}^{K} \beta_{j} X_{ij} \forall i = 1,2,...,n$ 
+
+\vs
+
+
+
+\vs
+
+1. Model is linear in parameters
+
+\vs
+
+2. Data are a random sample of the population
+
+\vs
+
+3. E(\epsilon) = 0
+
+\vs
+
+4. No high multicolinearity
+
+\vs
+
+5. Precise measurement
+
+\vs
+
+6. Residuals have constant variance
+
+\vs
+
+7. (normally distributed) Error terms are homoscedastic, and distinct error terms are uncorrleated.
+
+\vs
+
+One of the most significant theorems in econometrics is the Gauss-Markov
+theorem. Before talking about this theorem, I would first like to define the
+concept BLUE, best linear unbiased estimator. Best means that BLUE has the
+lowest variance of all unbiased linear estimators.
+
+\vs
+
+Definition:
+
+\vs
+
+Linear estimator - a linear estimator of $\beta_j$ is a linear combination
+
+\vs
+
+$\beta^{^}_j = c_{1j} y_1 + c_{2j} y_2 + ... + c_{nj} y_n = C_{j} y$;
+
+\vs
+
+that is,
+
+$\beta{^} = C y$,
+
+\vs
+
+where all elements of $C$ cannot depend on the unobservable $\beta_j$ but
+can depend on the values of $X_{ij}$.
+
+\vs
+
+Gauss-Markov Theorem: 
+
+\vs
+
+
+
+\vs
+
+One large problem is simply misspecification. That is, if one is proposing a
+model that does not fit the phenomenon well, the regression will turn out
+poorly. For example, if one is fitting a quadratic relationship to a linear
+one, the errors will not be normally distributed and will not have zero
+expected value everywhere, the residuals would not
+have a constant variance, there would be a pattern in the residuals. Another
+misspecification problem is variable omission bias. 
+
+\vs
+
+Talk about variable omission bias mathematically.
+
+\vs
+
+If errors are not independent, one should look for a variable that the
+errors are correlated to and add that variable to the model. This helps
+someone.
+
+\vs
+
+HOW?
+
+\vs
+
+Another solution here is to look at the autocorrelation function to see if
+there are time and space patterns. That is, are observations that are close
+by in time and space more similar to each other than other points are. If
+so, it may be the case that using Generalized Least Squares (GLS) will be
+beneficial. GLS is like OLS except that instead of using Euclidean distance
+one uses Mahalanobis Distance.
+
+\vs
+
+Definition: 
+
+The Mahalanobis distance of an observation $x → = ( x_1 , x_2 , x_3 , … ,
+x_N)^T {\displaystyle {\vec {x}}=(x_{1},x_{2},x_{3},\dots ,x_{N})^{T}}
+{\displaystyle {\vec {x}}=(x_{1},x_{2},x_{3},\dots ,x_{N})^{T}}$ from a set
+of observations with mean μ → = ( μ 1 , μ 2 , μ 3 , … , μ N ) T
+{\displaystyle {\vec {\mu }}=(\mu _{1},\mu _{2},\mu _{3},\dots ,\mu
+_{N})^{T}} {\displaystyle {\vec {\mu }}=(\mu _{1},\mu _{2},\mu _{3},\dots
+,\mu _{N})^{T}} and covariance matrix S is defined as:
+
+    D M ( x → ) = ( x → − μ → ) T S − 1 ( x → − μ → ) . {\displaystyle
+    D_{M}({\vec {x}})={\sqrt {({\vec {x}}-{\vec {\mu }})^{T}S^{-1}({\vec
+    {x}}-{\vec {\mu }})}}.\,} {\displaystyle D_{M}({\vec {x}})={\sqrt
+    {({\vec {x}}-{\vec {\mu }})^{T}S^{-1}({\vec {x}}-{\vec {\mu }})}}.\,}
+
+\vs
+
+Note here that if we have no multicolinearity between independent variables,
+we have that $S = I$, which means that the Mahalobis distance reduces to the
+Euclidean distance.
+
+\vs
+
+An explanation for doing this follows from the following logic. Think about
+    defining the normalized distance between the test point and the set as
+    $\dfrac{x - \mu}{\sigma}$. Using this distance one can plug this into
+    the normal distribution one can derive the probability of a test point
+    being in the set. This is a cool concept for measuring distance, but the
+    above approach assumes a spherical distribution around some center of
+    mass. The Mahalanobis Distance allows for the patterns in time and space
+    to be accounted for by allowing one to account for the distance from the
+    center of mass as well as the direction that the test point is away from
+    the center of mass. In this way it allows for a more generalized
+    ellipsoidal distribution.
+
+\vs
+
+That is, one can build the best-fitting ellipsoid for the distribution using
+the covariance matrix of samples. "The Mahalanobis distance is the distance
+of the test point from the center of mass divided by the width of the
+ellipsoid in the direction of the test point".
+
+CITE wikipedia
+
+\vs
+
+If one does not have average error equal to zero everywhere, one should
+look for patterns in the observed vs the predicted values, the residuals vs
+the predicted values, and the partial-residual plots. 
+
+\vs
+
+Residuals
+
+\vs
+
+Partial residuals
+
+\vs
+
+If there is a
+monotonic pattern in partial-residual plot, one potentially has a
+misspecification error that can be mitigated using some transformation of
+the variable related to the residual plot with the pattern in it. If there
+is no monotonic pattern, adding more or non-linear terms may be helpful. 
+
+\vs
+
+If one has multicolinearity, the regression model as a whole is significant,
+but none of the individual parameters are. One just has to accept that none
+of the estimates for the parameters are meaningful, even if the RHS
+variables explain the LHS variables. If there are statistically redundant
+variables, one should remove them. Put proof about why here.
+
+\vs
+
+TALK ABOUT MULTICOLINEARITY ASSUMPTION
+
+\vs
+
+We are not worried about imprecise measurement or our sample not being
+representative of the population. This is because much of our data is
+validated by the Bitcoin network. 
+
+\vs
+
+Another problem is breaking of heteroskedasticity. This results in the
+parameter values being \textit{unbiased} and the $p$-values
+\textit{unreliable}.
+
+CITE Assumptions of Ordinary Least Squares Regression
+http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
+
+\vs
+
+Definition:
+
+\vs
+
+Unreliable is blah blah blah
+
+CITE
+
+\vs
+
+Definition:
+
+\vs
+
+Unbiased is blah blah blah
+
+CITE
+
+\vs
+
+One should plot the standardized residuals against the fitted values. If one
+sees that as the fitted values increase, so do do the errors, then try
+transforming the variable in such a way that larger values are adjusted
+downward more, such as using a power less than one. We could see this
+phenomenon happening in the case of Bitcoin because Bitcion has a high price
+volatility, and when Bitcoin prices are at higher values one would expect the
+fluctuation in prices due to uncertainty in the market to be higher because
+people have more to lose on speculation on price changes during
+transactions. There is not doubt that the average variance of price was much
+lower when Bitcoin prices were less than a dollar than they are now with the
+value of one BTC at $750.
+
+\vs
+
+
+
+\vs
+heterskedasticity, multi-colinearity, no autocorrelation, stationarity, 

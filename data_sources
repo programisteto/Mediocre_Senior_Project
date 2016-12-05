@@ -1,0 +1,56 @@
+Acquired the hashrate data from Blockchain.info at
+https://blockchain.info/charts/hash-rate?showDataPoints=true
+
+\vs
+
+Got transaction volume in USD from
+https://blockchain.info/charts/estimated-transaction-volume-usd?daysAverageString=7&timespan=all
+
+\vs
+
+Got daily closing market price in USD from
+https://blockchain.info/charts/market-price?timespan=all&showDataPoints=true
+
+\vs
+
+Measurement of Bitcoin Valence from (LINK)
+
+\vs
+
+The daily volume of BTC exchanged in $80$ on-line markets for other
+currencies from (bitcoincharts.com)
+
+\vs
+
+Amount of downloads of the most popular Bitcion client from
+http://sourceforge.net/projects/bitcoin
+
+\vs
+
+Controlling for major events in the Bitcoin economy.
+(https://en.bitcoin.it/wiki/History)
+
+\vs
+
+Data about Bitcoin Days Destroyed (LINK) 
+
+\vs
+
+Measurement of speculation - previous lags of Bitcoin prices (got from
+market prices), news measurements
+
+\vs
+
+Daily oil prices (Brent Jones) taken from (LINK)
+
+\vs
+
+$ln(usd_jpy)L_2$ was taken from the transform of data found at (LINK)
+
+\vs
+
+$ln(usd_eur)L_1$ was found at (LINK).
+
+\vs
+
+
